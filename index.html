@@ -8,8 +8,8 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Доброе утро, Эвелина ☀</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css?v=close1">
+  <script src="./script.js?v=close1" defer></script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -78,11 +78,14 @@
   <footer class="footer wrap"><span>Рад, что мы познакомились.</span><span>Пусть сегодня у тебя будет хороший день. <span class="footer-heart" aria-hidden="true">♡</span></span></footer>
 
   <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-title">
-    <button class="close-button" type="button" id="close-letter" aria-label="Закрыть записку">×</button>
     <div class="letter-paper">
-      <p class="eyebrow">ЭВЕЛИНЕ · К НАЧАЛУ ДНЯ</p>
+      <div class="letter-toolbar">
+        <p class="eyebrow">ЭВЕЛИНЕ · К НАЧАЛУ ДНЯ</p>
+        <button class="close-button" type="button" id="close-letter" aria-label="Закрыть записку"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="letter-scroll" id="letter-scroll">
       <span class="letter-flower" aria-hidden="true"><svg class="asterisk-icon" width="1em" height="1em" viewBox="0 0 32 32" fill="none" focusable="false" aria-hidden="true"><path d="M16 3v26M3 16h26M6.8 6.8l18.4 18.4M6.8 25.2 25.2 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span>
-      <h2 id="letter-title">Это утро — тебе.</h2>
+      <h2 id="letter-title" tabindex="-1">Это утро — тебе.</h2>
       <div class="letter-text">
         <p>Если бы тёплые слова умели сокращать расстояния, эта записка уже лежала бы рядом с твоей утренней чашкой.</p>
         <blockquote class="morning-poem"><p>Пусть первый луч<br>найдёт тебя раньше забот.<br>Улыбнись этому утру —<br>тебе улыбка так идёт.</p></blockquote>
@@ -91,6 +94,7 @@
         <p class="letter-ending">Пусть сегодня у твоей улыбки<br>будет побольше поводов.</p>
       </div>
       <div class="letter-signature"><span>Рад нашему знакомству</span><span aria-hidden="true">♡</span></div>
+      </div>
     </div>
   </dialog>
   <div id="sparkles" class="sparkles" aria-hidden="true"></div>

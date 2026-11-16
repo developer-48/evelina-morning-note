@@ -7,7 +7,8 @@ document.querySelectorAll('[data-open-letter]').forEach(button => {
     letterOpener = button;
     letter.showModal();
     document.body.classList.add('modal-open');
-    document.querySelector('#close-letter').focus({ preventScroll: true });
+    document.querySelector('#letter-scroll').scrollTop = 0;
+    document.querySelector('#letter-title').focus({ preventScroll: true });
   });
 });
 document.querySelector('#close-letter').addEventListener('click', () => letter.close());

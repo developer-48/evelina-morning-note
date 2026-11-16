@@ -143,6 +143,13 @@ body.letter-open{overflow:hidden}
 }
 @media(max-width:350px){.letter-dialog{--edge:10px;width:calc(100% - 20px)}.letter-paper::after{inset:9px}.letter-toolbar{padding-left:22px;padding-right:14px}.letter-toolbar .eyebrow{font-size:6px}.letter-scroll{padding-inline:22px}.letter-heading h2{font-size:30px}.letter-content{font-size:13px}.letter-poem{padding-inline:18px}.letter-poem p{font-size:19px}.letter-content .letter-ending{font-size:23px}}
 @keyframes wish-flutter-mobile{0%,100%{transform:translate(0,0) rotate(-10deg)}35%{transform:translate(8px,-13px) rotate(5deg)}70%{transform:translate(-4px,6px) rotate(-7deg)}}
+.hero-butterfly.roaming-butterfly,.wish-butterfly.roaming-butterfly{left:0;top:0;right:auto;bottom:auto;translate:none;rotate:none;scale:1;animation:none;will-change:transform;transform-origin:center;contain:layout style}
+.hero-butterfly.roaming-butterfly{width:54px;height:44px}
+.hero-butterfly[data-flight="garden-two"]{width:46px;height:38px}
+.wish-butterfly.roaming-butterfly{width:50px;height:41px;opacity:.9}
+.wish-butterfly[data-flight="garden-two"]{width:44px;height:36px;opacity:.85}
+.wish-butterfly[data-flight="garden-three"]{width:38px;height:31px;opacity:.8}
+@media(max-width:760px){.hero-butterfly.roaming-butterfly{width:42px;height:35px}.hero-butterfly[data-flight="garden-two"]{width:36px;height:30px}.wish-butterfly.roaming-butterfly{width:36px;height:30px}.wish-butterfly[data-flight="garden-two"]{width:32px;height:27px}.wish-butterfly[data-flight="garden-three"]{width:29px;height:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal{opacity:1;transform:none}.flying-petal{display:none}.hero-meadow,.light-stream{transform:none}.wake-button:hover{transform:none}}
 </style>
 
@@ -176,7 +183,9 @@ body.letter-open{overflow:hidden}
       <button class="wake-button intro-rise" id="wake-button" type="button"><span class="button-sun"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#sun-icon"/></svg></span><span id="wake-label">Разбудить это утро</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <p class="hero-hint intro-rise" id="hero-hint">одно касание — и всё начнёт расцветать</p>
     </div>
-    <div class="hero-butterfly butterfly"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+    <div class="hero-butterfly butterfly roaming-butterfly" data-flight="sky" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+    <div class="hero-butterfly butterfly roaming-butterfly" data-flight="garden-one" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+    <div class="hero-butterfly butterfly roaming-butterfly" data-flight="garden-two" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
     <svg class="meadow hero-meadow" viewBox="0 0 1400 480" preserveAspectRatio="xMidYMax slice" fill="none" aria-hidden="true" focusable="false"><path d="M0 340Q300 290 660 360T1400 310V480H0Z" fill="#c5ceb2" opacity=".22"/><path d="M0 400Q300 310 700 398T1400 360V480H0Z" fill="url(#hills)"/><g stroke="#92a083" stroke-width="1" opacity=".45"><path d="M20 470q30 -70 15 -110"/><path d="M77 470q-30 -70 -15 -126"/><path d="M134 470q30 -70 15 -142"/><path d="M191 470q-30 -70 -15 -158"/><path d="M248 470q30 -70 15 -110"/><path d="M305 470q-30 -70 -15 -126"/><path d="M362 470q30 -70 15 -142"/><path d="M419 470q-30 -70 -15 -158"/><path d="M476 470q30 -70 15 -110"/><path d="M533 470q-30 -70 -15 -126"/><path d="M590 470q30 -70 15 -142"/><path d="M647 470q-30 -70 -15 -158"/><path d="M704 470q30 -70 15 -110"/><path d="M761 470q-30 -70 -15 -126"/><path d="M818 470q30 -70 15 -142"/><path d="M875 470q-30 -70 -15 -158"/><path d="M932 470q30 -70 15 -110"/><path d="M989 470q-30 -70 -15 -126"/><path d="M1046 470q30 -70 15 -142"/><path d="M1103 470q-30 -70 -15 -158"/><path d="M1160 470q30 -70 15 -110"/><path d="M1217 470q-30 -70 -15 -126"/><path d="M1274 470q30 -70 15 -142"/><path d="M1331 470q-30 -70 -15 -158"/><path d="M1388 470q30 -70 15 -110"/></g><g transform="translate(25 440) scale(1.05) rotate(-13)"><g class="sway" style="--delay:0.0s;--duration:5s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.0s"><use href="#cosmos-light"/></g></g></g></g><g transform="translate(130 445) scale(0.78) rotate(6)"><g class="sway" style="--delay:-0.7s;--duration:6s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.065s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(215 460) scale(1.4) rotate(-7)"><g class="sway" style="--delay:-1.4s;--duration:7s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.13s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(330 448) scale(0.65) rotate(14)"><g class="sway" style="--delay:-2.0999999999999996s;--duration:8s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.195s"><use href="#cosmos-light"/></g></g></g></g><g transform="translate(395 465) scale(1.02) rotate(-9)"><g class="sway" style="--delay:-2.8s;--duration:5s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.26s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(520 470) scale(0.63) rotate(14)"><g class="sway" style="--delay:-3.5s;--duration:6s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.325s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(650 470) scale(0.72) rotate(-9)"><g class="sway" style="--delay:-4.199999999999999s;--duration:7s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.39s"><use href="#cosmos-light"/></g></g></g></g><g transform="translate(775 460) scale(0.85) rotate(15)"><g class="sway" style="--delay:-4.8999999999999995s;--duration:8s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.455s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(865 475) scale(1.25) rotate(-7)"><g class="sway" style="--delay:-5.6s;--duration:5s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.52s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(1010 460) scale(0.85) rotate(11)"><g class="sway" style="--delay:-6.3s;--duration:6s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.585s"><use href="#cosmos-light"/></g></g></g></g><g transform="translate(1110 455) scale(1.5) rotate(-5)"><g class="sway" style="--delay:-7.0s;--duration:7s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.65s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(1225 445) scale(0.9) rotate(10)"><g class="sway" style="--delay:-7.699999999999999s;--duration:8s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.7150000000000001s"><use href="#cosmos-rose"/></g></g></g></g><g transform="translate(1355 460) scale(1.3) rotate(-8)"><g class="sway" style="--delay:-8.399999999999999s;--duration:5s"><use href="#plant"/><g transform="translate(3 -178)"><g class="bloom" style="--bloom-delay:0.78s"><use href="#cosmos-light"/></g></g></g></g></svg>
     <span class="scene-caption">маленький повод улыбнуться с утра</span>
     <button class="skip-to-letter" type="button" data-open-letter>К записке <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M12 3v17m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -185,9 +194,11 @@ body.letter-open{overflow:hidden}
   <div class="story" id="story">
     <section class="wish-section chapter" id="wishes" aria-labelledby="wish-title">
       <div class="wish-glow" aria-hidden="true"></div>
-      <div class="wish-butterfly butterfly wish-butterfly-one" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
-      <div class="wish-butterfly butterfly wish-butterfly-two" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
-      <div class="wish-butterfly butterfly wish-butterfly-three" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+      <div class="wish-butterfly butterfly roaming-butterfly" data-flight="sky-left" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+      <div class="wish-butterfly butterfly roaming-butterfly" data-flight="sky-right" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+      <div class="wish-butterfly butterfly roaming-butterfly" data-flight="garden-one" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+      <div class="wish-butterfly butterfly roaming-butterfly" data-flight="garden-two" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
+      <div class="wish-butterfly butterfly roaming-butterfly" data-flight="garden-three" aria-hidden="true"><svg viewBox="-40 -35 80 65" aria-hidden="true" focusable="false"><use href="#butterfly-art"/></svg></div>
       <p class="eyebrow reveal">ПРОГНОЗ НА СЕГОДНЯ: ЧТО-НИБУДЬ ХОРОШЕЕ</p>
       <h2 id="wish-title" class="reveal">Немного солнца.<br><em>Лично для тебя.</em></h2>
       <p class="wish-intro reveal">Не знаю, какая погода у тебя за окном. <br>Но здесь для тебя всегда найдётся немного света.</p>
@@ -404,4 +415,130 @@ motion.addEventListener('change', () => {
     petalLayer.replaceChildren();
   }
 });
+
+// Fit smooth, closed flight paths to the clear areas of each scene.
+// The browser interpolates transforms; no per-frame JavaScript loop is needed.
+function setupButterflyFlights() {
+  const scenes = [hero, wishSection];
+  const animations = new Map();
+  const visibleScenes = new Set();
+  const routes = {
+    sky: [[.02,.55],[.2,.05],[.48,.65],[.81,.12],[.98,.65],[.74,.95],[.4,.45],[.12,.9]],
+    'sky-left': [[.2,.18],[.8,.03],[.96,.38],[.63,.83],[.25,.96],[.03,.59]],
+    'sky-right': [[.8,.82],[.18,.96],[.04,.54],[.38,.1],[.86,.03],[.98,.42]],
+    'garden-one': [[.03,.5],[.22,.1],[.43,.7],[.7,.18],[.97,.47],[.76,.9],[.48,.3],[.2,.85]],
+    'garden-two': [[.93,.7],[.7,.2],[.48,.85],[.19,.28],[.03,.62],[.28,.95],[.58,.4],[.82,.98]],
+    'garden-three': [[.17,.33],[.37,.04],[.65,.47],[.88,.16],[.78,.73],[.49,.94],[.22,.72]]
+  };
+  const timing = {
+    sky: [31000, .13], 'sky-left': [17000, .28], 'sky-right': [21000, .58],
+    'garden-one': [26000, .08], 'garden-two': [32000, .44], 'garden-three': [23000, .72]
+  };
+
+  function localRect(element, sceneRect) {
+    const rect = element.getBoundingClientRect();
+    return { left: rect.left - sceneRect.left, right: rect.right - sceneRect.left,
+      top: rect.top - sceneRect.top, bottom: rect.bottom - sceneRect.top };
+  }
+
+  function makeFrames(points, box) {
+    const frames = [];
+    const count = points.length;
+    for (let i = 0; i <= count * 12; i++) {
+      const segment = Math.floor(i / 12) % count;
+      const t = (i % 12) / 12;
+      const p0 = points[(segment + count - 1) % count];
+      const p1 = points[segment];
+      const p2 = points[(segment + 1) % count];
+      const p3 = points[(segment + 2) % count];
+      const at = axis => .5 * ((2*p1[axis]) + (-p0[axis]+p2[axis])*t +
+        (2*p0[axis]-5*p1[axis]+4*p2[axis]-p3[axis])*t*t +
+        (-p0[axis]+3*p1[axis]-3*p2[axis]+p3[axis])*t*t*t);
+      const x = box.left + Math.min(1, Math.max(0, at(0))) * box.width;
+      const y = box.top + Math.min(1, Math.max(0, at(1))) * box.height;
+      const bank = (p2[0] - p0[0]) * 24 + Math.sin(i / (count * 12) * Math.PI * 2) * 7;
+      frames.push({ transform: `translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) rotate(${bank.toFixed(1)}deg)` });
+    }
+    frames[frames.length - 1] = { ...frames[0] };
+    return frames;
+  }
+
+  function rebuild() {
+    for (const scene of scenes) {
+      const rect = scene.getBoundingClientRect();
+      const w = scene.clientWidth, h = scene.clientHeight;
+      const isHero = scene === hero;
+      const field = localRect(scene.querySelector('.meadow'), rect);
+      const contentEnd = localRect(scene.querySelector(isHero ? '#hero-hint' : '.wish-dots'), rect).bottom;
+      for (const butterfly of scene.querySelectorAll('.roaming-butterfly')) {
+        const kind = butterfly.dataset.flight;
+        const bw = butterfly.offsetWidth, bh = butterfly.offsetHeight;
+        let left = 12, right = w - bw - 12, top, bottom;
+        if (kind === 'sky') {
+          top = contentEnd + 14;
+          bottom = Math.max(top + 18, field.top + 75 - bh - 8);
+          left = w * .08; right = w * .9 - bw;
+        } else if (kind.startsWith('sky-')) {
+          const sunRect = localRect(sun, rect);
+          top = localRect(scene.querySelector('.wish-intro'), rect).bottom + 34;
+          bottom = localRect(message, rect).top - bh - 10;
+          if (kind === 'sky-left') {
+            left = Math.max(8, w * .04); right = sunRect.left - bw - 12;
+          } else {
+            left = sunRect.right + 12; right = w - bw - Math.max(8, w * .04);
+          }
+        } else {
+          top = Math.max(contentEnd + 8, field.top + (isHero ? 75 : 18));
+          bottom = h - bh - 18;
+          if (isHero) {
+            const footerTop = Math.min(localRect(scene.querySelector('.scene-caption'), rect).top,
+              localRect(scene.querySelector('.skip-to-letter'), rect).top);
+            bottom = footerTop - bh - 10;
+            top = Math.max(contentEnd + 10, Math.min(top, bottom - 28));
+          }
+          if (kind === 'garden-three') { left = w*.13; right = w*.87-bw; }
+        }
+        const box = { left, top, width: Math.max(8, right-left), height: Math.max(8, bottom-top) };
+        const frames = makeFrames(routes[kind], box);
+        const [duration, phase] = timing[kind];
+        const previous = animations.get(butterfly);
+        const time = previous?.currentTime ?? duration * phase;
+        previous?.cancel();
+        butterfly.style.transform = frames[Math.floor(phase*(frames.length-1))].transform;
+        if (motion.matches) { animations.delete(butterfly); continue; }
+        const animation = butterfly.animate(frames, { duration, iterations: Infinity, easing: 'linear' });
+        animation.currentTime = time;
+        if (!visibleScenes.has(scene) || document.hidden) animation.pause();
+        animations.set(butterfly, animation);
+      }
+    }
+  }
+
+  function updatePlayback() {
+    for (const [butterfly, animation] of animations) {
+      const scene = butterfly.closest('.hero, .wish-section');
+      if (visibleScenes.has(scene) && !document.hidden && !motion.matches) animation.play();
+      else animation.pause();
+    }
+  }
+  const visibility = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) visibleScenes.add(entry.target);
+      else visibleScenes.delete(entry.target);
+    }
+    updatePlayback();
+  });
+  scenes.forEach(scene => visibility.observe(scene));
+  const resize = new ResizeObserver(rebuild);
+  scenes.forEach(scene => {
+    resize.observe(scene);
+    resize.observe(scene.querySelector(scene === hero ? '.hero-content' : '.wish-intro'));
+    resize.observe(scene.querySelector('.meadow'));
+  });
+  motion.addEventListener('change', rebuild);
+  window.addEventListener('resize', rebuild, { passive: true });
+  document.addEventListener('visibilitychange', updatePlayback);
+  rebuild();
+}
+setupButterflyFlights();
 </script></body></html>
